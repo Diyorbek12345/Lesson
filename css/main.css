@@ -1,0 +1,111 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  margin: 0;
+  /* background-color: grey; */
+}
+
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.img {
+  max-width: 800px;
+  flex-shrink: 0;
+}
+
+.wrapper {
+  background-color: grey;
+}
+
+.box {
+  margin-top: 20px;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 200px;
+  column-gap: 50px;
+}
+
+.text {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.button{
+  background-color: white;
+  padding: 10px;
+  color: black;
+}
+
+.button1 {
+  background-color: black;
+  padding: 10px;
+  color: white;
+  border: none;
+}
+
+.input{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 200px;
+  padding-left: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.form{
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 100px) {
+  .box {
+    margin-top: 20px;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 200px;
+  }
+}
